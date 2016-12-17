@@ -14,5 +14,10 @@ namespace ShoppingCenter.Data
         public DbSet<Department> Departments { get; set; }
         public DbSet<Journal> Journal { get; set; }
         public DbSet<Employee> Employees { get; set; }
+
+        public Context() : base("localsql")
+        {
+
+        }
     }
 }
