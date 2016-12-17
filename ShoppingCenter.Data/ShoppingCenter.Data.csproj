@@ -44,6 +44,8 @@
     <Compile Include="DiscountItem.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="Journal.cs" />
+    <Compile Include="NormalItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

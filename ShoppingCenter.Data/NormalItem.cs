@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace ShoppingCenter.Data
 {
-    class DiscountItem : Item
+    class NormalItem : Item
     {
-        public int Discount { get; set; }
-
         public override decimal TotalPrice()
         {
-            return Price * (Discount/100);
+            return Price;
         }
     }
 }
