@@ -43,10 +43,10 @@
 
                         <DataGrid Grid.Row="0" Name="dataGridNewInvoice" AutoGenerateColumns="False">
                             <DataGrid.Columns>
-                                <DataGridComboBoxColumn Header="Id" Width="50"></DataGridComboBoxColumn>
-                                <DataGridCheckBoxColumn Header="Article" Width="420"></DataGridCheckBoxColumn>
-                                <DataGridTextColumn Header="Price" Width="100"></DataGridTextColumn>
-                                <DataGridTextColumn Header="Discount"></DataGridTextColumn>
+                                <DataGridComboBoxColumn Header="Article Id" Width="1.3*"></DataGridComboBoxColumn>
+                                <DataGridCheckBoxColumn Header="Article" Width="8*"></DataGridCheckBoxColumn>
+                                <DataGridTextColumn Header="Price" Width="2*"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Discount" Width="2*"></DataGridTextColumn>
                             </DataGrid.Columns>
                         </DataGrid>
 
@@ -56,20 +56,49 @@
                                 <ColumnDefinition Width="2*"/>
                                 <ColumnDefinition Width="1*"/>
                             </Grid.ColumnDefinitions>
-                            <Button Height="25" Width="100" FontSize="13">Total Cost</Button>
+                            <Button Name="buttonShowTotalCost" Height="25" Width="100" FontSize="13">Total Cost</Button>
                             <TextBlock 
-                    Grid.Column="1" 
-                    VerticalAlignment="Center" 
-                    HorizontalAlignment="Center"
-                    FontSize="30"
-                    FontWeight="ExtraBold">Total Cost</TextBlock>
-                            <Button Grid.Column="2" Height="25" Width="100" FontSize="13">Save invoice</Button>
+                                Grid.Column="1" 
+                                VerticalAlignment="Center" 
+                                HorizontalAlignment="Center"
+                                FontSize="30"
+                                FontWeight="ExtraBold">Total Cost</TextBlock>
+                            <Button Name ="buttonSaveInvoice" Grid.Column="2" Height="25" Width="100" FontSize="13">Save invoice</Button>
                         </Grid>
-                    </Grid>
-                    
+                    </Grid>                    
                 </TabItem.Content>
             </TabItem>
-            
+
+            <TabItem Header="Open invoice - Id">
+                <TabItem.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="6*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <ComboBox Name ="comboBoxInvoiceId" Height="25" Width="200"></ComboBox>
+                            <Button Name ="buttonSearchInvoiceById" Grid.Column="1" Height="25" Width="150">Search</Button>
+                        </Grid>
+
+                        <DataGrid Grid.Row="1" Name="dataGridOpenInvoiceById" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Date" Width="1*"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Article" Width="5*"></DataGridTextColumn>
+                                <DataGridTextColumn Header="FinalPrice" Width="1*"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Employee" Width="1*"></DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
+
         </TabControl>
     </Grid>
 </Window>
