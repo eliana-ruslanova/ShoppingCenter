@@ -130,6 +130,36 @@
             </TabItem.Content>
             </TabItem>
 
+            <TabItem Header="Open invoices - Date">
+                <TabItem.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="6*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <ComboBox Name ="comboBoxDate" Height="25" Width="200"></ComboBox>
+                            <Button Name ="buttonSearchInvoicesByDate" Grid.Column="1" Height="25" Width="150">Search</Button>
+                        </Grid>
+
+                        <DataGrid Grid.Row="1" Name="dataGridOpenInvoicesByDate" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Invoice Id" Width="1*"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Employee" Width="2*"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Article" Width="5*"></DataGridTextColumn>
+                                <DataGridTextColumn Header="FinalPrice" Width="1*"></DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
+
         </TabControl>
     </Grid>
 </Window>
