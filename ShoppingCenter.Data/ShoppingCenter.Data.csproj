@@ -50,7 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Brand.cs" />
-    <Compile Include="Context.cs" />
     <Compile Include="Department.cs" />
     <Compile Include="DiscountItem.cs" />
     <Compile Include="Employee.cs" />
