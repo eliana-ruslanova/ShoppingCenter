@@ -92,10 +92,5 @@ namespace ShoppingCenter.Data
         {
             _dataset = new DataSet();
         }
-
-        public void AddMethod(object item)
-        {
-
-        }
     }
 }
