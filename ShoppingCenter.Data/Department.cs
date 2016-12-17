@@ -10,7 +10,5 @@ namespace ShoppingCenter.Data
     {
         public int Id { get; set; }
         public List<Employee> Employees { get; set; }
-
-        public 
     }
 }
