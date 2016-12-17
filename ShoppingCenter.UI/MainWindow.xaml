@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ShoppingCenter.UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Shopping Center" Height="480" Width="640">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="New invoice" ></MenuItem>
+                <MenuItem Header="Open invoices" >
+                    <MenuItem Header="Search by Id"></MenuItem>
+                    <MenuItem Header="Search by employee" ></MenuItem>
+                    <MenuItem Header="Search by date" ></MenuItem>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Exit" ></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Add" >
+                <MenuItem Header="New employee" ></MenuItem>
+                <MenuItem Header="New item" ></MenuItem>
+                <MenuItem Header="New brand"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="View">
+            </MenuItem>
+        </Menu>
+     
     </Grid>
 </Window>

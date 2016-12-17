@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ShoppingCenter.UI"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="200" Width="300">
+        Title="Authentication" Height="200" Width="300">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
