@@ -31,6 +31,45 @@
             <MenuItem Header="View">
             </MenuItem>
         </Menu>
-     
+
+        <TabControl Grid.Row="1" Name="tabControl">
+            <TabItem Header="New invoice">
+                <TabItem.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="5*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+
+                        <DataGrid Grid.Row="0" Name="dataGridNewInvoice" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridComboBoxColumn Header="Id" Width="50"></DataGridComboBoxColumn>
+                                <DataGridCheckBoxColumn Header="Article" Width="420"></DataGridCheckBoxColumn>
+                                <DataGridTextColumn Header="Price" Width="100"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Discount"></DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            <Button Height="25" Width="100" FontSize="13">Total Cost</Button>
+                            <TextBlock 
+                    Grid.Column="1" 
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center"
+                    FontSize="30"
+                    FontWeight="ExtraBold">Total Cost</TextBlock>
+                            <Button Grid.Column="2" Height="25" Width="100" FontSize="13">Save invoice</Button>
+                        </Grid>
+                    </Grid>
+                    
+                </TabItem.Content>
+            </TabItem>
+            
+        </TabControl>
     </Grid>
 </Window>
