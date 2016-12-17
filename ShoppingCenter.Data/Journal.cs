@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShoppingCenter.Data
 {
-    class Journal
+    public class Journal 
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }

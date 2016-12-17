@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ShoppingCenter.Data
 {
-    class NormalItem : Item
+    public class NormalItem : Item
     {
-        public override decimal TotalPrice()
+        public override decimal FinalPrice()
         {
             return Price;
         }
