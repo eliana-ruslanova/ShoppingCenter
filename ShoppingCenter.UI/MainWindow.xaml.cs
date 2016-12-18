@@ -36,5 +36,36 @@ namespace ShoppingCenter.UI
             tabControl.SelectedIndex = 0;
             gridTabContentNewInvoice.Visibility = Visibility.Visible;
         }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            tabControl.SelectedIndex = 1;
+            gridTabContentOpenInvoiceId.Visibility = Visibility.Visible;
+        }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Click_4(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Click_5(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Click_6(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

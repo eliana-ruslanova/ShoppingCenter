@@ -16,18 +16,18 @@
             <MenuItem Header="File">
                 <MenuItem Header="New invoice" Click="MenuItem_Click" ></MenuItem>
                 <MenuItem Header="Open invoices">
-                    <MenuItem Header="Search by Id"></MenuItem>
-                    <MenuItem Header="Search by employee" ></MenuItem>
-                    <MenuItem Header="Search by date" ></MenuItem>
+                    <MenuItem Header="Search by Id" Click="MenuItem_Click_1"></MenuItem>
+                    <MenuItem Header="Search by employee" Click="MenuItem_Click_2" ></MenuItem>
+                    <MenuItem Header="Search by date" Click="MenuItem_Click_3" ></MenuItem>
                 </MenuItem> 
                 <Separator />
                 <MenuItem Header="Exit" Click="Exit_Click" ></MenuItem>
             </MenuItem>
             <MenuItem Header="Add" >
-                <MenuItem Header="New employee" ></MenuItem>
-                <MenuItem Header="New item" ></MenuItem>
+                <MenuItem Header="New employee" Click="MenuItem_Click_4"></MenuItem>
+                <MenuItem Header="New item" Click="MenuItem_Click_5" ></MenuItem>
             </MenuItem>
-            <MenuItem Header="Requests">
+            <MenuItem Header="Requests" Click="MenuItem_Click_6">
             </MenuItem>
         </Menu>
 
@@ -70,7 +70,7 @@
 
             <TabItem Header="Open invoice - Id">
                 <TabItem.Content>
-                    <Grid>
+                    <Grid Name="gridTabContentOpenInvoiceId">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="1*"/>
                             <RowDefinition Height="6*"/>
