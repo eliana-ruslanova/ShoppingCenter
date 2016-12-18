@@ -24,5 +24,10 @@ namespace ShoppingCenter.UI
         {
             InitializeComponent();
         }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
