@@ -160,7 +160,7 @@
 
             <TabItem Header="Add new employee">
                 <TabItem.Content>
-                    <Grid>
+                    <Grid Name="gridTabContentAddEmployee" Visibility="Hidden">
                         <Grid.RowDefinitions>
                             <RowDefinition/>
                             <RowDefinition/>
@@ -187,7 +187,7 @@
 
             <TabItem Header="Add new item">
                 <TabItem.Content>
-                    <Grid>
+                    <Grid Name="gridTabContentAddItem" Visibility="Hidden">
                         <Grid.RowDefinitions>
                             <RowDefinition/>
                             <RowDefinition/>
@@ -291,7 +291,7 @@
 
             <TabItem Header="Requests">
                 <TabItem.Content>
-                    <Grid>
+                    <Grid Name="gridTabContentRequests" Visibility="Hidden">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="1*"/>
                             <RowDefinition Height="3*"/>

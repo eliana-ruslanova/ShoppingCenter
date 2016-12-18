@@ -57,17 +57,20 @@ namespace ShoppingCenter.UI
 
         private void MenuItem_Click_4(object sender, RoutedEventArgs e)
         {
-
+            tabControl.SelectedIndex = 4;
+            gridTabContentAddEmployee.Visibility = Visibility.Visible;
         }
 
         private void MenuItem_Click_5(object sender, RoutedEventArgs e)
         {
-
+            tabControl.SelectedIndex = 5;
+            gridTabContentAddItem.Visibility = Visibility.Visible;
         }
 
         private void MenuItem_Click_6(object sender, RoutedEventArgs e)
         {
-
+            tabControl.SelectedIndex = 6;
+            gridTabContentRequests.Visibility = Visibility.Visible;
         }
     }
 }
