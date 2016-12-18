@@ -57,6 +57,11 @@
     <Compile Include="GiftItem.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Invoice.cs" />
+    <Compile Include="Migrations\201612181420332_InitialCreate.cs" />
+    <Compile Include="Migrations\201612181420332_InitialCreate.Designer.cs">
+      <DependentUpon>201612181420332_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NormalItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
@@ -64,6 +69,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201612181420332_InitialCreate.resx">
+      <DependentUpon>201612181420332_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
