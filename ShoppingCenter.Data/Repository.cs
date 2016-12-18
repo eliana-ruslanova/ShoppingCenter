@@ -14,7 +14,7 @@ namespace ShoppingCenter.Data
             public List<Department> Departments { get; set; }
             public List<Item> Items { get; set; }
             public List<Brand> Brands { get; set; }
-            public Journal Journal { get; set; }
+            public List<Invoice> Invoices { get; set; }
 
             public DataSet()
             {
@@ -22,6 +22,7 @@ namespace ShoppingCenter.Data
                 Departments = new List<Department>();
                 Items = new List<Item>();
                 Brands = new List<Brand>();
+                Invoices = new List<Invoice>();
             }
 
         }
@@ -76,15 +77,15 @@ namespace ShoppingCenter.Data
             }
         }
 
-        public Journal Journal
+        public List<Invoice> Invoices
         {
             get
             {
-                return _dataset.Journal;
+                return _dataset.Invoices;
             }
             set
             {
-                _dataset.Journal = value;
+                _dataset.Invoices = value;
             }
         }
 

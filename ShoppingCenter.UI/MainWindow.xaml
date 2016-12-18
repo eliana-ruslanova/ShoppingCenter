@@ -19,9 +19,9 @@
                     <MenuItem Header="Search by Id"></MenuItem>
                     <MenuItem Header="Search by employee" ></MenuItem>
                     <MenuItem Header="Search by date" ></MenuItem>
-                </MenuItem>
+                </MenuItem> 
                 <Separator />
-                <MenuItem Header="Exit" ></MenuItem>
+                <MenuItem Header="Exit" Click="Exit_Click" ></MenuItem>
             </MenuItem>
             <MenuItem Header="Add" >
                 <MenuItem Header="New employee" ></MenuItem>
