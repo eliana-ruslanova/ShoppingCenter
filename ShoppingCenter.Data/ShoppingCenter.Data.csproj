@@ -61,6 +61,10 @@
     <Compile Include="Migrations\201612181420332_InitialCreate.Designer.cs">
       <DependentUpon>201612181420332_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612181437152_AddNameToDepartment.cs" />
+    <Compile Include="Migrations\201612181437152_AddNameToDepartment.Designer.cs">
+      <DependentUpon>201612181437152_AddNameToDepartment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NormalItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,6 +77,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201612181420332_InitialCreate.resx">
       <DependentUpon>201612181420332_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612181437152_AddNameToDepartment.resx">
+      <DependentUpon>201612181437152_AddNameToDepartment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
