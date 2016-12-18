@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShoppingCenter.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,11 @@ namespace ShoppingCenter.UI
         public MainWindow()
         {
             InitializeComponent();
+
+            using (var c = new Context())
+            {
+
+            }
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)

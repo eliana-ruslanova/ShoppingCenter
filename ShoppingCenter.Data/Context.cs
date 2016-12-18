@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShoppingCenter.Data
 {
-    class Context : DbContext
+    public class Context : DbContext
     {
         public DbSet<Item> Items { get; set; }
         public DbSet<Brand> Brands { get; set; }
