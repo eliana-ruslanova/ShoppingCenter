@@ -15,6 +15,7 @@ namespace ShoppingCenter.Data
         public abstract decimal FinalPrice();
 
         public Brand Brand { get; set; }
+        public List<Invoice> Invoices { get; set; }
 
     }
 }
