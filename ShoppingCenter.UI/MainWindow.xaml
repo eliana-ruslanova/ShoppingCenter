@@ -14,8 +14,8 @@
 
         <Menu Height="25" VerticalAlignment="Top">
             <MenuItem Header="File">
-                <MenuItem Header="New invoice" ></MenuItem>
-                <MenuItem Header="Open invoices" >
+                <MenuItem Header="New invoice" Click="MenuItem_Click" ></MenuItem>
+                <MenuItem Header="Open invoices">
                     <MenuItem Header="Search by Id"></MenuItem>
                     <MenuItem Header="Search by employee" ></MenuItem>
                     <MenuItem Header="Search by date" ></MenuItem>
@@ -32,9 +32,9 @@
         </Menu>
 
         <TabControl Grid.Row="1" Name="tabControl">
-            <TabItem Header="New invoice">
+            <TabItem Header="New invoice" Name="tabItemNewInvoice">
                 <TabItem.Content>
-                    <Grid>
+                    <Grid Name="gridTabContentNewInvoice" Visibility="Hidden">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="5*"/>
                             <RowDefinition Height="1*"/>
