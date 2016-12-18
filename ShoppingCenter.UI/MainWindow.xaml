@@ -26,8 +26,6 @@
             <MenuItem Header="Add" >
                 <MenuItem Header="New employee" ></MenuItem>
                 <MenuItem Header="New item" ></MenuItem>
-                <MenuItem Header="New brand"></MenuItem>
-                <MenuItem Header="New department"></MenuItem>
             </MenuItem>
             <MenuItem Header="View">
             </MenuItem>
@@ -185,6 +183,94 @@
                         <Button Grid.Row="1" Grid.Column="1" Height="25" Width="150" FontFamily="Century Gothic" FontSize="13" VerticalAlignment="Top" Margin=" 0 25">Add new employee</Button>
                     </Grid>
                 </TabItem.Content>
+            </TabItem>
+
+            <TabItem Header="Add new item">
+                <TabItem.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock 
+                            HorizontalAlignment="Left" 
+                            VerticalAlignment="Center"
+                            Margin="20 0"
+                            FontFamily="Century Gothic"
+                            FontWeight="SemiBold"
+                            FontSize="15">Item name</TextBlock>
+
+                        <TextBox
+                            Name="textBoxItemName"
+                            Grid.Column="1"
+                            Height="25"
+                            Margin="10 0 10 0"></TextBox>
+
+                        <TextBlock
+                            Grid.Row="1"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="20 0"
+                            FontFamily="Century Gothic"
+                            FontWeight="SemiBold"
+                            FontSize="15">Brand</TextBlock>
+
+                        <ComboBox
+                            Name="comboBoxBrand"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Height="25"
+                            Margin="10 0 10 0"></ComboBox>
+
+                        <StackPanel
+                            Grid.Row="2">
+                            <RadioButton Name="radioButtonNormalItem" FontFamily="Century Gothic"> Normal Item</RadioButton>
+                            <RadioButton Name="radioButtonGiftItem" FontFamily="Century Gothic">Gift Item</RadioButton>
+                            <RadioButton Name="radioDiscountNormalItem" FontFamily="Century Gothic">Discount Item</RadioButton>                            
+                        </StackPanel>
+
+                        <Grid Grid.Row="2" Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="3*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Margin="20 0"
+                                FontFamily="Century Gothic"
+                                FontWeight="SemiBold"
+                                FontSize="15">Discount</TextBlock>
+
+                            <TextBox
+                                Name="textBoxDiscount"
+                                Grid.Column="1"
+                                Height="25"
+                                Margin="10 0 10 0"></TextBox>
+
+                            <Button
+                                Name="buttonAddItem"
+                                Grid.Row="1"
+                                Grid.ColumnSpan="2"
+                                Height="25"
+                                Width="250"
+                                FontFamily="Century Gothic"
+                                FontSize="15"> Add Item</Button>
+                            
+                        </Grid>
+                    </Grid>
+                </TabItem.Content>
+                
             </TabItem>
         </TabControl>
     </Grid>
