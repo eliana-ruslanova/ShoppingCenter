@@ -16,6 +16,6 @@ namespace ShoppingCenter.Data
         public abstract decimal FinalPrice();
 
         public Brand Brand { get; set; }
-        
+
     }
 }
