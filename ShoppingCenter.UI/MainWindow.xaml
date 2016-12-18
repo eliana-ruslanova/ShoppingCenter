@@ -43,7 +43,7 @@
                         <DataGrid Grid.Row="0" Name="dataGridNewInvoice" AutoGenerateColumns="False">
                             <DataGrid.Columns>
                                 <DataGridComboBoxColumn Header="Article Id" Width="1.3*"></DataGridComboBoxColumn>
-                                <DataGridCheckBoxColumn Header="Article" Width="8*"></DataGridCheckBoxColumn>
+                                <DataGridComboBoxColumn Header="Article" Width="8*"></DataGridComboBoxColumn>
                                 <DataGridTextColumn Header="Price" Width="2*"></DataGridTextColumn>
                                 <DataGridTextColumn Header="Discount" Width="2*"></DataGridTextColumn>
                             </DataGrid.Columns>
