@@ -24,11 +24,11 @@ namespace ShoppingCenter.UI
         public MainWindow()
         {
             InitializeComponent();
-
+            /*
             using (var c = new Context())
             {
-
-            }
+                c.Invoices.ToList();
+            }*/
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
