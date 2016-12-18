@@ -37,6 +37,7 @@
             Height="30"
             Width="100"
             FontFamily="Century Gothic"
-            Grid.Row="2">Log In</Button>
+            Grid.Row="2"
+            Click="buttonLogIn_Click">Log In</Button>
     </Grid>
 </Window>

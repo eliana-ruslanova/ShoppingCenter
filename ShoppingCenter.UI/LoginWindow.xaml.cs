@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShoppingCenter.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,11 @@ namespace ShoppingCenter.UI
         public LoginWindow()
         {
             InitializeComponent();
+        }
+
+        private void buttonLogIn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

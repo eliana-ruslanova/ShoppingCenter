@@ -24,6 +24,8 @@ namespace ShoppingCenter.UI
         public MainWindow()
         {
             InitializeComponent();
+            LoginWindow loginWindow = new LoginWindow();
+            loginWindow.ShowDialog();
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
