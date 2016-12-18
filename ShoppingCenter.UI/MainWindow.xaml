@@ -27,7 +27,7 @@
                 <MenuItem Header="New employee" ></MenuItem>
                 <MenuItem Header="New item" ></MenuItem>
             </MenuItem>
-            <MenuItem Header="View">
+            <MenuItem Header="Requests">
             </MenuItem>
         </Menu>
 
@@ -285,6 +285,80 @@
                                 FontSize="15"> Add Item</Button>
                             
                         </Grid>
+                    </Grid>
+                </TabItem.Content>                
+            </TabItem>
+
+            <TabItem Header="Requests">
+                <TabItem.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="3*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1.5*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Margin="0 10">
+                            <RadioButton Name="radioButtonProfitInThePastMonth" FontFamily="Century Gothic">A profit in the past month</RadioButton>
+                            <RadioButton Name="radioButtonEmployeeEarnings" FontFamily="Century Gothic">How many employee earned</RadioButton>
+                            <RadioButton Name="radioButtonDepartmentIncome" FontFamily="Century Gothic">Dapartment's income</RadioButton>
+                        </StackPanel>
+
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="3*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Margin="10 0"
+                                FontFamily="Century Gothic"
+                                FontSize="13">Employee</TextBlock>
+
+                            <TextBlock
+                                Grid.Row="1"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Margin="10 0"
+                                FontFamily="Century Gothic"
+                                FontSize="13">Department</TextBlock>
+
+                            <TextBox
+                                Name="textBoxEmployee"
+                                Grid.Column="1"
+                                Height="25"
+                                Margin="10 0 10 0"></TextBox>
+
+                            <TextBox
+                                Name="textBoxDepartment"
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                Height="25"
+                                Margin="10 0 10 0"></TextBox>
+
+                            <Button
+                                Name="buttonShowRequest"
+                                Grid.Row="2"
+                                Grid.ColumnSpan="2"
+                                Margin="20 5"
+                                FontFamily="Century Gothic"
+                                FontSize="13">Show</Button>
+                        </Grid>
+
+                        <DataGrid
+                            Name="dataGridShowRequests"
+                            Grid.Row="1"
+                            Grid.ColumnSpan="2"></DataGrid>
                     </Grid>
                 </TabItem.Content>
                 
