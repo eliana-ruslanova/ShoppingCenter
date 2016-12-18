@@ -45,12 +45,14 @@ namespace ShoppingCenter.UI
 
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)
         {
-
+            tabControl.SelectedIndex = 2;
+            gridTabContentOpenInvoicesByEmployee.Visibility = Visibility.Visible;
         }
 
         private void MenuItem_Click_3(object sender, RoutedEventArgs e)
         {
-
+            tabControl.SelectedIndex = 3;
+            gridTabContentOpenInvoiceDate.Visibility = Visibility.Visible;
         }
 
         private void MenuItem_Click_4(object sender, RoutedEventArgs e)

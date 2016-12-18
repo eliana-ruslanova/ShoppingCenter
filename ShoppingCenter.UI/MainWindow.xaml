@@ -70,7 +70,7 @@
 
             <TabItem Header="Open invoice - Id">
                 <TabItem.Content>
-                    <Grid Name="gridTabContentOpenInvoiceId">
+                    <Grid Name="gridTabContentOpenInvoiceId" Visibility="Hidden">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="1*"/>
                             <RowDefinition Height="6*"/>
@@ -100,7 +100,7 @@
 
             <TabItem Header="Open invoices - Employee">
             <TabItem.Content>
-                <Grid>
+                <Grid Name="gridTabContentOpenInvoicesByEmployee" Visibility="Hidden">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="6*"/>
@@ -130,7 +130,7 @@
 
             <TabItem Header="Open invoices - Date">
                 <TabItem.Content>
-                    <Grid>
+                    <Grid Name="gridTabContentOpenInvoiceDate" Visibility="Hidden">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="1*"/>
                             <RowDefinition Height="6*"/>
