@@ -160,6 +160,32 @@
                 </TabItem.Content>
             </TabItem>
 
+            <TabItem Header="Add new employee">
+                <TabItem.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Height="25" HorizontalAlignment="Left" Margin ="20 " FontFamily="Century Gothic" FontSize="15" FontWeight="SemiBold" VerticalAlignment="Center">Full Name</TextBlock>
+                        <TextBox Height="25" Width="400" Grid.Column="1"></TextBox>
+                        
+                        <StackPanel Grid.Row="1">
+                            <TextBlock Height="25" HorizontalAlignment="Left" Margin ="20 0" FontFamily="Century Gothic" FontSize="15" FontWeight="SemiBold" VerticalAlignment="Center">Birth date</TextBlock>
+                            <DatePicker Grid.Row="1" Name="datePicker"></DatePicker>
+                            
+                        </StackPanel>
+                        
+                        <Button Grid.Row="1" Grid.Column="1" Height="25" Width="150" FontFamily="Century Gothic" FontSize="13" VerticalAlignment="Top" Margin=" 0 25">Add new employee</Button>
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>
