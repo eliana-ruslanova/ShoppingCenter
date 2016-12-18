@@ -192,6 +192,7 @@
                             <RowDefinition/>
                             <RowDefinition/>
                             <RowDefinition/>
+                            <RowDefinition/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*"/>
@@ -228,14 +229,30 @@
                             Height="25"
                             Margin="10 0 10 0"></ComboBox>
 
+                        <TextBlock 
+                            Grid.Row="2"
+                            HorizontalAlignment="Left" 
+                            VerticalAlignment="Center"
+                            Margin="20 0"
+                            FontFamily="Century Gothic"
+                            FontWeight="SemiBold"
+                            FontSize="15">Quantity</TextBlock>
+
+                        <TextBox
+                            Name="textBoxQuantity"
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            Height="25"
+                            Margin="10 0 10 0"></TextBox>
+
                         <StackPanel
-                            Grid.Row="2">
+                            Grid.Row="3">
                             <RadioButton Name="radioButtonNormalItem" FontFamily="Century Gothic"> Normal Item</RadioButton>
                             <RadioButton Name="radioButtonGiftItem" FontFamily="Century Gothic">Gift Item</RadioButton>
                             <RadioButton Name="radioDiscountNormalItem" FontFamily="Century Gothic">Discount Item</RadioButton>                            
                         </StackPanel>
 
-                        <Grid Grid.Row="2" Grid.Column="1">
+                        <Grid Grid.Row="3" Grid.Column="1">
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
                                 <RowDefinition/>
